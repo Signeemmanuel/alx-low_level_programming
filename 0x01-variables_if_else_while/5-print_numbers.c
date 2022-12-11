@@ -1,15 +1,16 @@
 #include <stdio.h>
 
-/*
- *main: entry point
- *return: 0
- * */
-
+/**
+ * main - Entry point into Program
+ *
+ * Return: always return 0 after successful execution of the program
+ */
 int main(void)
 {
-	char ch;
-	for(ch = '0'; ch <= '9'; ch++)
-		printf("%c", c)
+	int num;
+
+	for (num = 0; num <= 9; num++)
+		printf("%d", num);
 	printf("\n");
 	return (0);
 }
