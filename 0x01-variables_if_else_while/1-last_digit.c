@@ -2,13 +2,15 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*                                                                                                                                                       
- *                                                                                                                                                        *main: entry point of the program                                                                                                                       
- *                                                                                                                                                         *return: 0                                                                                                                                              
- *                                                                                                                                                          */
+/**
+ * main - Entry point of program
+ *
+ * Return: Always return 0 for succesfull execution
+ */
 int main(void)
 {
 	int n, m;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	m = n % 10;
