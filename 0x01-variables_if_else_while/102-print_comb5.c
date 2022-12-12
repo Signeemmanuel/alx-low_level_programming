@@ -9,8 +9,6 @@
 int main(void)
 {
 	int ch1, ch2, ch3, ch4;
-	int tmp1 = 0;
-	int tmp2 = -1;
 	int cnt, num2;
 
 	for (ch1 = 0; ch1 <= 9; ch1++)
