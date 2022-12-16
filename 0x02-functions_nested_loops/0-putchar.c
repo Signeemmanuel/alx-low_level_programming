@@ -7,6 +7,14 @@
  */
 int main(void)
 {
-	_putchar("_putchar\n");
+	char *word = "_putchar\n";
+	int i = 0;
+
+	while (*word)
+	{
+		_putchar(*word);
+		word++;
+	}
+	_putchar('\n');
 	return (0);
 }
