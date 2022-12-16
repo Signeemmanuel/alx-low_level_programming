@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * main - Entery point into the program
@@ -10,10 +10,10 @@ int main(void)
 	char *word = "_putchar\n";
 	int i = 0;
 
-	while (*word)
+	while (i < 8)
 	{
-		_putchar(*word);
-		word++;
+		_putchar(word[i]);
+		i++;
 	}
 	_putchar('\n');
 	return (0);
