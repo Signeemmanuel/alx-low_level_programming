@@ -28,8 +28,10 @@ void print_to_98(int n)
 		{
 			if (n < 0)
 				_putchar('-');
-			if (abs(n) / 10 > 0)
-				_putchar((abs(n) / 10) + '0');
+			if ((abs(n) / 10 / 10) > 0)
+				_putchar((abs(n) / 10 / 10) + '0');
+			if ((abs(n) / 10) % 10 >= 0)
+				_putchar(((abs(n) / 10) % 10) + '0');
 			_putchar((abs(n) % 10 + '0'));
 			if (n != 98)
 			{
