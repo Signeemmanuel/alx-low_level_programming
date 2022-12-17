@@ -1,6 +1,20 @@
 #include "main.h"
 
 /**
+ * abs - compute the absolute value of a number
+ * @n: Number
+ *
+ * Ruturn: absolute value
+ */
+int abs(int n)
+{
+	if (n < 0)
+		return (-n);
+	return (n);
+}
+
+
+/**
  * print_to_98 - prints all natural numbers from @n to 98
  * @n: Number
  *
@@ -14,7 +28,7 @@ void print_to_98(int n)
 		{
 			if (n < 0)
 				_putchar('-');
-			if (_abs(n) / 10 > 0)
+			if (abs(n) / 10 > 0)
 				_putchar((_abs(n) / 10) + '0');
 			_putchar((_abs(n) % 10 + '0'));
 			if (n != 98)
