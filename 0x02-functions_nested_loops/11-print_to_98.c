@@ -30,7 +30,7 @@ void print_to_98(int n)
 				_putchar('-');
 			if ((abs(n) / 10 / 10) > 0)
 				_putchar((abs(n) / 10 / 10) + '0');
-			if ((abs(n) / 10) % 10 >= 0)
+			if (((abs(n) / 10) % 10 >= 0) && (abs(n) > 10))
 				_putchar(((abs(n) / 10) % 10) + '0');
 			_putchar((abs(n) % 10 + '0'));
 			if (n != 98)
