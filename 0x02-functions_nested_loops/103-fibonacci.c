@@ -22,14 +22,17 @@ int get_fib(int n)
  */
 int main(void)
 {
-	int i;
+	int i = 0;
+	int sum = 0;
+	int res = 0;
 
-	for (i = 1; i <= 50; i++)
+	while (res < 4000000)
 	{
-		printf("%d", get_fib(i));
-		if (i != 50)
-			printf(", ");
+		res = get_fib(i);
+		if (res % 2 == 0)
+			sum += res;
+		i++;
 	}
-	printf("\n");
+	printf("%d\n", sum);
 	return (0);
 }
