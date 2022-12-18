@@ -1,34 +1,26 @@
 #include <stdio.h>
 
 /**
- * get_fib - get the nth number in the fibonacci series
- * @n: nth sequence
- *
- * Return: nth fibonacci number.
- */
-int get_fib(int n)
-{
-	if (n == 0 || n == 1)
-		return (1);
-	else
-		return (get_fib(n - 1) + get_fib(n - 2));
-}
-
-
-/**
  * main - Entry point into the program
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
+	long num1 = 1l;
+	long num2 = 1l;
+	long num;
 	int i;
 
-	for (i = 1; i <= 50; i++)
+	printf("%ld,", num2);
+	for (int i = 2; i <= 50; i++)
 	{
-		printf("%d", get_fib(i));
+		num = num1 + num2;
+		printf(" %ld", num);
 		if (i != 50)
-			printf(", ");
+			printf(",");
+		num1 = num2;
+		num2 = num;
 	}
 	printf("\n");
 	return (0);
