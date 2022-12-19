@@ -18,6 +18,18 @@ void print_array(int *a, int n)
 			_putchar('-');
 			a[i] = -a[i];
 		}
+		if (a[i] / 10000000000 >= 1)
+			_putchar(((a[i] / 10000000000) % 10) + '0');
+		if (a[i] / 1000000000 >= 1)
+			_putchar(((a[i] / 1000000000) % 10) + '0');
+		if (a[i] / 100000000 >= 1)
+			_putchar(((a[i] / 100000000) % 10) + '0');
+		if (a[i] / 10000000 >= 1)
+			_putchar(((a[i] / 10000000) % 10) + '0');
+		if (a[i] / 1000000 >= 1)
+			_putchar(((a[i] / 1000000) % 10) + '0');
+		if (a[i] / 100000 >= 1)
+			_putchar(((a[i] / 100000) % 10) + '0');
 		if (a[i] / 10000 >= 1)
 			_putchar(((a[i] / 10000) % 10) + '0');
 		if (a[i] / 1000 >= 1)
@@ -27,7 +39,7 @@ void print_array(int *a, int n)
 		if (a[i] / 10 >= 1)
 			_putchar(((a[i] / 10) % 10) + '0');
 		_putchar((a[i] % 10) + '0');
-		if (i != n)
+		if (i != n - 1)
 		{
 			_putchar(',');
 			_putchar(' ');
