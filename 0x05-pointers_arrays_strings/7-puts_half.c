@@ -15,6 +15,8 @@ void puts_half(char *str)
 		count++;
 	size = count;
 	max = count / 2;
+	if (count % 2 == 1)
+		max++;
 	count = 0;
 	while (count < size)
 	{
