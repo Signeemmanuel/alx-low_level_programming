@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ * factorial - Computes the factorail a given number.
+ * @n: number to compute factorial.
+ *
+ * Return: factorial of @n.
+ */
+
+int factorial(int n)
+{
+	if (n == 0)
+		return (0);
+	return (factorial(n - 1) + factorial(n - 2));
+}
