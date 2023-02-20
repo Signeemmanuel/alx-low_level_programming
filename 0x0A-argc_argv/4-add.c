@@ -6,7 +6,7 @@
 
 /**
  * main - Entry point into the program.
- * @args: Number of command line arguments.
+ * @argc: Number of command line arguments.
  * @argv: An array of strings of command line arguments.
  *
  * Return: 0 (Success) or 1 (Error).
