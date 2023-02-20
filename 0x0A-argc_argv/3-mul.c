@@ -5,21 +5,24 @@
 
 /**
  * main - Entry point into the program.
- * @args: Number of command line arguments.
+ * @argc: Number of command line arguments.
  * @argv: An array of strings of command line arguments.
  *
- * Return: 0 (Success).
+ * Return: 0 (Success) or 1 (Error).
  */
-int main(int args, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 	int result = 1;
 
-	if (args <= 2)
+	if (argc <= 2)
+	{
 		printf("Error\n");
+		return (1);
+	}
 	else
 	{
-		for (i = 1; i < args; i++)
+		for (i = 1; i < argc; i++)
 			result *= atoi(argv[i]);
 		printf("%d\n", result);
 	}
