@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - Entry point into the program.
@@ -9,8 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	char *name = argv[0];
-
-	printf("%d\n", argc - 1);
+	if (argv[0])
+		printf("%d\n", argc - 1);
 	return (0);
 }
