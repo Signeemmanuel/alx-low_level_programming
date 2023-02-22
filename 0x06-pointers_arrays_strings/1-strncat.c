@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * _strncat - this fuction will concatenates two strings
@@ -7,7 +7,7 @@
  * @n: concatenate up to position n.
  * Return: a pointer to @dest
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int count = 0;
 	int size_dest;
